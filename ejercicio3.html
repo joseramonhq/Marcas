@@ -1,4 +1,4 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -10,29 +10,37 @@
         body {
             width: 60%;
             margin: auto;
-            background-color: darkblue;
-
+            background-color: rgb(221, 222, 233);
+            padding: 30px;
         }
 
         .longbox {
-            width: 100%;
-            background-color: white;
-            border: 1px solid whitesmoke;
-            border-bottom: 4px solid whitesmoke;
+            border: 1px solid rgb(67, 70, 235);
+            padding-left: 10px;
+            border-radius: 5px;
+            box-shadow: 4px 4px 4px 4px #8b8787;
+            margin: 30px auto 30px;
         }
+      
+        .longbox:nth-child(2n),
+        .longbox:nth-child(2n) a {
+            background-color: royalblue;
+            color: aliceblue;
 
+        }
     </style>
 </head>
 
 <body>
+    <h1>Mi lista de ejercicios</h1>
     <div class="longbox">
         <div class="littlebox">
-            <p id="exercise1"><a href="ejercicio1">Ejercicio 1</a></p>
+            <p id="exercise1"><a href="ejercicio1.html">Ejercicio 1</a></p>
         </div>
     </div>
     <div class="longbox">
         <div class="littlebox">
-            <p id="exercise2"><a href="ejercicio2">Ejercicio 2</a></p>
+            <p id="exercise2"><a href="ejercicio2.html">Ejercicio 2</a></p>
         </div>
     </div>
     <div class="longbox">

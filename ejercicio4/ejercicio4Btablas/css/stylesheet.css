@@ -1,0 +1,78 @@
+    body {
+        width: 1024px;
+        background-color: hsla(273, 100%, 4%, 0.781);
+        background-image: url('../imagenes/Marvel.jpg');
+        background-repeat: no-repeat;
+        background-size: 1024px;
+        background-position: top center;
+        margin: 0 auto;
+    }
+
+    /*************************************   Lista en linea ****************************/
+
+    #main_id {
+        margin: 20px 0px;
+        background-color: hsla(0, 83%, 47%, 0.87);
+        padding: 5px 10px;
+    }
+
+    #main_id li {
+        list-style-type: none;
+        display: inline;
+        padding: 40px;
+    }
+
+    #main_id a {
+        text-decoration: none;
+    }
+
+    #main_id li a span {
+        text-decoration: underline;
+    }
+
+    a {
+        font-weight: 500;
+    }
+
+    a:link {
+        color: gold;
+    }
+
+    a:visited {
+        color: yellowgreen;
+    }
+
+    a:hover {
+        color: black;
+    }
+
+    a:active {
+        color: white;
+    }
+
+    /*******************************************  Listas en cajas  *************************/
+
+    ul:not(#main_id) {
+        border: 1px solid black;
+        background-color: hsla(189, 69%, 75%, 0.5);
+        display: inline-block;
+        width: 120px;
+        margin: 5px;
+        margin-left: 10px;
+    }
+
+    ul:not(#main_id) li {
+        padding: 10px;
+    }
+
+    #first_list {
+        list-style-image: url('../imagenes/spiderman_logo_peque.png');
+    }
+
+    #second_list {
+        list-style-image: url('../imagenes/captain_america_peque.png');
+    }
+
+    #third_list {
+        list-style-image: url('../imagenes/batman_logo_peque.png');
+    }

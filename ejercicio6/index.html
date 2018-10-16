@@ -8,35 +8,77 @@
     <title>Document</title>
 
     <style>
-        body{
-            margin: 0;
-        }
-        #container1 {
-            margin: 0 auto;
-            height: 700px;
-            background-position: center top;
-            background-repeat: no-repeat;
-            background-image: url('imagenes/sillamapamundi.jpg');
-        }
-        img{
-            width: 200px;
+        body {
+            background-color: #BCC0C1;
+           margin: 0;
+            padding: 5px;
+
+
+
+
         }
 
-        
+        #container {
+            min-width: 1440px;
+            border: 15px solid gold;
+            overflow: hidden;
+        }
+
+        .asides {
+            width: 20%;
+            float: left;
+            background-image: url('imagenes/selection.png');
+
+        }
+
+        #center {
+            width: 60%;
+            float: left;
+
+        }
+
+        #back {
+            width: 100%;
+        }
+
+        .flag1,
+        .flag2 {
+            width: 100%;
+        }
+        iframe{
+            width: 600px;
+            height: 350px;
+            position: static;
+            bottom: 650px;
+            left: 40px;
+            border-radius: 15px;
+        }
     </style>
 </head>
 
 <body>
 
-    <div id="container1">
-        <img src="imagenes/dinamarca.jpg" alt="" class="flag">
-        <img src="imagenes/argentina.jpeg" alt="" class="flag">
-        <img src="imagenes/grecia.jpg" alt="" class="flag">
-        <img src="imagenes/escocia.jpg" alt="" class="flag">
-        <img src="imagenes/japon.jpg" alt="" class="flag">
-        <img src="imagenes/inglaterra.jpg" alt="" class="flag">
+    <div id="container">
+        <div id="container_left" class="asides">
+            <img class="flag1" id="dinamarca" src="imagenes/dinamarca.jpg" alt="">
+            <img class="flag1" id="argentina" src="imagenes/argentina.jpeg" alt="">
+            <img class="flag1" id="grecia" src="imagenes/grecia.jpg" alt="">
+            <img class="flag1" id="francia" src="imagenes/francia.jpg" alt="">
+        </div>
+        <div id="center">
+            <img id="back" src="imagenes/sillamapamundi.jpg" alt="">
+            <iframe src="https://marketplace.visualstudio.com/items?itemName=MadsKristensen.CSSTools#overview"
+                frameborder="0"></iframe>
+        </div>
+        <div id="container_right" class="asides">
+            <img class="flag2" id="inglaterra" src="imagenes/inglaterra.jpg" alt="" class="flag">
+            <img class="flag2" id="escocia" src="imagenes/escocia.jpg" alt="" class="flag">
+            <img class="flag2" id="japon" src="imagenes/japon.jpg" alt="" class="flag">
+            <img class="flag2" id="portugal" src="imagenes/portugal.jpg" alt="" class="flag">
+        </div>
 
     </div>
+
 </body>
 
 </html>

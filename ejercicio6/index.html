@@ -8,19 +8,129 @@
     <title>Document</title>
 
     <style>
+        html,
+        body,
+        div,
+        span,
+        applet,
+        object,
+        iframe,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        blockquote,
+        pre,
+        a,
+        abbr,
+        acronym,
+        address,
+        big,
+        cite,
+        code,
+        del,
+        dfn,
+        em,
+        font,
+        img,
+        ins,
+        kbd,
+        q,
+        s,
+        samp,
+        small,
+        strike,
+        strong,
+        sub,
+        sup,
+        tt,
+        var,
+        dl,
+        dt,
+        dd,
+        ol,
+        ul,
+        li,
+        fieldset,
+        form,
+        label,
+        legend,
+        table,
+        caption,
+        tbody,
+        tfoot,
+        thead,
+        tr,
+        th,
+        td,
+        center,
+        u,
+        b,
+        i {
+            vertical-align: baseline border: 0;
+            outline: 0;
+            font-weight: normal;
+            font-style: normal;
+            font-size: 100%;
+            font-family: inherit;
+        }
+
+        * {
+            margin: 0;
+            padding: 0
+        }
+
         body {
+            line-height: 1;
+            height: 100%
+        }
+
+        :focus {
+            outline: 0
+        }
+
+        ol,
+        ul {
+            list-style: none
+        }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        blockquote,
+        q {
+            quotes: """"
+        }
+
+        hr {
+            border: 0;
+            color: #000;
+            background-color: #000;
+            height: 1px
+        }
+
+        blockquote:before,
+        blockquote:after,
+        q:before,
+        q:after {
+            content: ""
+        }
+
+        body {
+            width: 100%;
             background-color: #BCC0C1;
-           margin: 0;
+            margin: 0;
             padding: 5px;
-
-
-
-
         }
 
         #container {
             min-width: 1440px;
-            border: 15px solid gold;
+            border: 15px solid #f5da43;
             overflow: hidden;
         }
 
@@ -28,30 +138,27 @@
             width: 20%;
             float: left;
             background-image: url('imagenes/selection.png');
-
         }
 
-        #center {
+        #container_center {
             width: 60%;
             float: left;
-
+            overflow: hidden;
         }
 
+        .flag1,
+        .flag2,
         #back {
             width: 100%;
         }
 
-        .flag1,
-        .flag2 {
+        iframe {
+
             width: 100%;
-        }
-        iframe{
-            width: 600px;
-            height: 350px;
-            position: static;
-            bottom: 650px;
-            left: 40px;
-            border-radius: 15px;
+            height: 800px;
+           
+
+
         }
     </style>
 </head>
@@ -65,16 +172,14 @@
             <img class="flag1" id="grecia" src="imagenes/grecia.jpg" alt="">
             <img class="flag1" id="francia" src="imagenes/francia.jpg" alt="">
         </div>
-        <div id="center">
-            <img id="back" src="imagenes/sillamapamundi.jpg" alt="">
-            <iframe src="https://marketplace.visualstudio.com/items?itemName=MadsKristensen.CSSTools#overview"
-                frameborder="0"></iframe>
+        <div id="container_center">
+            <iframe src="imagenes/sillamapamundi.jpg" frameborder="0"></iframe>
         </div>
         <div id="container_right" class="asides">
             <img class="flag2" id="inglaterra" src="imagenes/inglaterra.jpg" alt="" class="flag">
             <img class="flag2" id="escocia" src="imagenes/escocia.jpg" alt="" class="flag">
             <img class="flag2" id="japon" src="imagenes/japon.jpg" alt="" class="flag">
-            <img class="flag2" id="portugal" src="imagenes/portugal.jpg" alt="" class="flag">
+            <img class="flag2" id="rusia" src="imagenes/rusia.jpg" alt="" class="flag">
         </div>
 
     </div>

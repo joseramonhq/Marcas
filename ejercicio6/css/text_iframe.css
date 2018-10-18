@@ -25,6 +25,7 @@ img {
     border-bottom-right-radius: 16vW;
     border-top-left-radius: 4vw;
     text-align: left;
+    overflow: hidden;
 
 }
 h1{
@@ -32,6 +33,7 @@ h1{
     color:whitesmoke;
     text-shadow: 3px 3px rgb(65, 64, 64);
 }
-p{
-   
+#bandera{
+    width: 6vw;
 }
+

@@ -2,7 +2,7 @@ body {
     margin: 0;
     width: 100%;
     background-color: #BCC0C1;
-    min-width: 800px;;
+    min-width: 1024px;;
 }
 
 .flags {
@@ -19,7 +19,9 @@ body {
     width: 61.8%;
     height: auto;
     float: left;
-    background-image: url('imagenes/sillamapamundi.jpg');
+    background-image: url('../imagenes/sillamapamundi1.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 #inner_container_right {

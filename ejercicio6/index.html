@@ -6,182 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-
-    <style>
-        html,
-        body,
-        div,
-        span,
-        applet,
-        object,
-        iframe,
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6,
-        p,
-        blockquote,
-        pre,
-        a,
-        abbr,
-        acronym,
-        address,
-        big,
-        cite,
-        code,
-        del,
-        dfn,
-        em,
-        font,
-        img,
-        ins,
-        kbd,
-        q,
-        s,
-        samp,
-        small,
-        strike,
-        strong,
-        sub,
-        sup,
-        tt,
-        var,
-        dl,
-        dt,
-        dd,
-        ol,
-        ul,
-        li,
-        fieldset,
-        form,
-        label,
-        legend,
-        table,
-        caption,
-        tbody,
-        tfoot,
-        thead,
-        tr,
-        th,
-        td,
-        center,
-        u,
-        b,
-        i {
-            vertical-align: baseline border: 0;
-            outline: 0;
-            font-weight: normal;
-            font-style: normal;
-            font-size: 100%;
-            font-family: inherit;
-        }
-
-        * {
-            margin: 0;
-            padding: 0
-        }
-
-        body {
-            line-height: 1;
-            height: 100%
-        }
-
-        :focus {
-            outline: 0
-        }
-
-        ol,
-        ul {
-            list-style: none
-        }
-
-        table {
-            border-collapse: collapse;
-            border-spacing: 0;
-        }
-
-        blockquote,
-        q {
-            quotes: """"
-        }
-
-        hr {
-            border: 0;
-            color: #000;
-            background-color: #000;
-            height: 1px
-        }
-
-        blockquote:before,
-        blockquote:after,
-        q:before,
-        q:after {
-            content: ""
-        }
-
-        body {
-            width: 100%;
-            background-color: #BCC0C1;
-            margin: 0;
-            padding: 5px;
-        }
-
-        #container {
-            min-width: 1440px;
-            border: 15px solid #f5da43;
-            overflow: hidden;
-        }
-
-        .asides {
-            width: 20%;
-            float: left;
-            background-image: url('imagenes/selection.png');
-        }
-
-        #container_center {
-            width: 60%;
-            float: left;
-            overflow: hidden;
-        }
-
-        .flag1,
-        .flag2,
-        #back {
-            width: 100%;
-        }
-
-        iframe {
-
-            width: 100%;
-            height: 800px;
-           
+    <link rel="stylesheet" href="../ejercicio6/css/stylesheet.css">
 
 
-        }
-    </style>
 </head>
 
 <body>
 
-    <div id="container">
-        <div id="container_left" class="asides">
-            <img class="flag1" id="dinamarca" src="imagenes/dinamarca.jpg" alt="">
-            <img class="flag1" id="argentina" src="imagenes/argentina.jpeg" alt="">
-            <img class="flag1" id="grecia" src="imagenes/grecia.jpg" alt="">
-            <img class="flag1" id="francia" src="imagenes/francia.jpg" alt="">
-        </div>
-        <div id="container_center">
-            <iframe src="imagenes/sillamapamundi.jpg" frameborder="0"></iframe>
-        </div>
-        <div id="container_right" class="asides">
-            <img class="flag2" id="inglaterra" src="imagenes/inglaterra.jpg" alt="" class="flag">
-            <img class="flag2" id="escocia" src="imagenes/escocia.jpg" alt="" class="flag">
-            <img class="flag2" id="japon" src="imagenes/japon.jpg" alt="" class="flag">
-            <img class="flag2" id="rusia" src="imagenes/rusia.jpg" alt="" class="flag">
-        </div>
+    <div id="inner_container_left" class="asides">
+        <a href="../ejercicio6/html/dinamarca.html" target="iframe_a"><img src="imagenes/dinamarca.jpg" alt="" id="dinamarca"
+                class="flags"></a>
+        <a href="../ejercicio6/html/argentina.html" target="iframe_a"><img src="imagenes/argentina.jpeg" alt="" id="argentina"
+                class="flags"></a>
+        <a href="" target="iframe_a"><img src="imagenes/grecia.jpg" alt="" id="grecia" class="flags"></a>
+        <a href="" target="iframe_a"><img src="imagenes/francia.jpg" alt="" id="francia" class="flags"></a>
 
+    </div>
+    <div id="inner_container_center">
+        <iframe name="iframe_a" src="" frameborder="0"></iframe>
+    </div>
+    <div id="inner_container_right" class="asides">
+        <a href="" target="iframe_a"><img src="imagenes/inglaterra.jpg" alt="" id="inglaterra" class="flags"></a>
+        <a href="" target="iframe_a"><img src="imagenes/escocia.jpg" alt="" id="escocia" class="flags"></a>
+        <a href="" target="iframe_a"><img src="imagenes/japon.jpg" alt="" id="japon" class="flags"></a>
+        <a href="" target="iframe_a"><img src="imagenes/rusia.jpg" alt="" id="rusia" class="flags"></a>
     </div>
 
 </body>

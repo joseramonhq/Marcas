@@ -1,0 +1,34 @@
+body {
+    margin: 0;
+    width: 100%;
+    background-color: #BCC0C1;
+    min-width: 800px;;
+}
+
+.flags {
+    width: 100%;
+}
+
+#inner_container_left {
+    width: 19%;
+    float: left;
+}
+
+#inner_container_center {
+    margin-left: 0.1%;
+    width: 61.8%;
+    height: auto;
+    float: left;
+    background-image: url('imagenes/sillamapamundi.jpg');
+}
+
+#inner_container_right {
+    width: 19%;
+    float: right;
+}
+
+iframe {
+    border: 0;
+    width: 100%;
+    height: 1067px;
+}

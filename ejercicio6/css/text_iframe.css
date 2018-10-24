@@ -1,0 +1,39 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    max-height: 900px;
+}
+
+img {
+    width: 100%;
+}
+#text{
+   
+    color: rgb(245, 245, 245);
+    font-size: 1.35vw;
+    font-weight: 500;
+    margin-left: 2%;
+    padding: 2.5%;
+    width: 60%;
+    position: absolute;
+    top: 36vw;
+    border-radius: 3vw;
+    border-bottom-right-radius: 16vW;
+    border-top-left-radius: 4vw;
+    text-align: left;
+    overflow: hidden;
+
+}
+h1{
+    font-size: 2.1em;
+    color:whitesmoke;
+    text-shadow: 3px 3px rgb(65, 64, 64);
+}
+#bandera{
+    width: 6vw;
+}
+

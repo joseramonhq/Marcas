@@ -1,0 +1,46 @@
+@font-face{
+    font-family: vonique64;
+    src: url('../vonique-64/vonique64.woff'),url('../vonique-64/vonique64bold.ttf'),url('../vonique-64/vonique64italic.ttf'),url('../vonique-64/vonique64bolditalic.ttf');
+}
+* {
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box;
+    font-family: vonique64,vonique64bold,vonique64italic, vonique64bolditalic;
+    line-height: 16px;
+    font-size: 16px;
+    text-align: justify;
+    letter-spacing: .02em;
+}
+span{
+    font-family: vonique64bold;
+    font-weight: bold;
+}
+
+
+
+img {
+    width: 20%;
+    float: left;
+}
+
+div>div {
+     
+    margin: 0 auto;
+    width: 75%;
+    border-color: red;
+    text-align: justify;
+}
+
+div>div::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+div {
+    border: 1px solid black;
+}
+
+body>div {
+    width: 50%;
+}

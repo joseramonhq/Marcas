@@ -7,15 +7,52 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <style>
+        * {
+            box-sizing: content-box;
+        }
+
         table,
         th,
-        td {
+        td,
+        div {
             border: 1px solid black;
         }
 
-        tr:nth-child(3) {
+        #primera tr:nth-child(3) td{
             font-weight: bold;
         }
+
+        #primera .no_bold {
+            font-weight: normal;
+        }
+
+        #segunda th {
+            padding: 20px 20px;
+        }
+        
+        p{
+            margin-top:0;
+        }
+        #segunda tr:nth-child(1) th{
+            padding: 10px 20px;
+        }
+        #tercera th{
+            padding: 5px 20px;
+        }
+
+        div {
+            float: left;
+            width: 44.5%;
+            margin: 10px;
+            padding: 20px;
+
+        }
+       
+        div table{
+            width: 40%;
+        }
+
+
     </style>
 </head>
 
@@ -28,7 +65,7 @@
         Ea ratione, sunt magnam nesciunt quibusdam at ex! Ut praesentium tenetur perspiciatis nesciunt expedita omnis
         officia nemo totam inventore officiis id autem esse delectus similique, non dolore deserunt nobis quidem nisi
         repellat. Commodi veniam accusamus, vel officia labore et!</p>
-    <table>
+    <table id="primera" >
         <tr>
             <th>Pais</th>
             <th>2001</th>
@@ -47,7 +84,7 @@
             <th>2014</th>
         </tr>
         <tr>
-            <td>UE (27 paises)</td>
+            <th class="no_bold">UE (27 paises)</th>
             <td>12.3</td>
             <td>12.3</td>
             <td>12.3</td>
@@ -64,7 +101,7 @@
             <td>12.3</td>
         </tr>
         <tr>
-            <td>España</td>
+            <th>España</th>
             <td>12.3</td>
             <td>12.3</td>
             <td>12.3</td>
@@ -81,7 +118,7 @@
             <td>12.3</td>
         </tr>
         <tr>
-            <td>Grecia</td>
+            <th class="no_bold">Grecia</th>
             <td>12.3</td>
             <td>12.3</td>
             <td>12.3</td>
@@ -98,7 +135,7 @@
             <td>12.3</td>
         </tr>
         <tr>
-            <td>Estados Unidos</td>
+            <th class="no_bold">Estados Unidos</th>
             <td>12.3</td>
             <td>12.3</td>
             <td>12.3</td>
@@ -115,7 +152,7 @@
             <td>12.3</td>
         </tr>
         <tr>
-            <td>Japón</td>
+            <th class="no_bold">Japón</th>
             <td>12.3</td>
             <td>12.3</td>
             <td>12.3</td>
@@ -132,11 +169,14 @@
             <td>12.3</td>
         </tr>
     </table>
+    <br>
+    <br>
+    <br>
 
-
-    <table>
+    <table id="segunda">
+        <caption>Tabla de ejemplo</caption>
         <tr>
-            <th>Mi tabla</th>
+            <td>Mi tabla</td>
             <th>Primera Columna</th>
             <th>Segunda Columna</th>
         </tr>
@@ -150,6 +190,176 @@
             <td>B-1</td>
             <td>B-2</td>
         </tr>
+        <br>
+        <br>
+        <br>
     </table>
+
+    <br>
+    <br>
+    <br>
+    <div>
+        <p>Tabla original. No se ha aplicado ninguna propiedad.</p>
+        <table class="tercera">
+            <tr>
+                <th>TABLA</th>
+                <th>A</th>
+                <th>B</th>
+                <th>C</th>
+                <th>D</th>
+
+            </tr>
+            <tr>
+                <th>a</th>
+                <td>1-1</td>
+                <td>2-2</td>
+                <td>3-3</td>
+                <td>4-4</td>
+            </tr>
+            <tr>
+                <th>b</th>
+                <td>1-1</td>
+                <td>2-2</td>
+                <td>3-3</td>
+                <td>4-4</td>
+            </tr>
+            <tr>
+                <th>c</th>
+                <td>1-1</td>
+                <td>2-2</td>
+                <td>3-3</td>
+                <td>4-4</td>
+            </tr>
+            <tr>
+                <th>d</th>
+                <td>1-1</td>
+                <td>2-2</td>
+                <td>3-3</td>
+                <td>4-4</td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <p>Aplicada la propiedad border-collapse:collapse;</p>
+    
+        <table >
+            <tr>
+                <th>TABLA</th>
+                <th>A</th>
+                <th>B</th>
+                <th>C</th>
+                <th>D</th>
+            </tr>
+            <tr>
+                <th>a</th>
+                <td>1-1</td>
+                <td>2-2</td>
+                <td>3-3</td>
+                <td>4-4</td>
+            </tr>
+            <tr>
+                <th>b</th>
+                <td>1-1</td>
+                <td>2-2</td>
+                <td>3-3</td>
+                <td>4-4</td>
+            </tr>
+            <tr>
+                <th>c</th>
+                <td>1-1</td>
+                <td>2-2</td>
+                <td>3-3</td>
+                <td>4-4</td>
+            </tr>
+            <tr>
+                <th>d</th>
+                <td>1-1</td>
+                <td>2-2</td>
+                <td>3-3</td>
+                <td>4-4</td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <p>Aplicada la propiedad border-spacing: 0;</p>
+        <table>
+            <tr>
+                <th>TABLA</th>
+                <th>A</th>
+                <th>B</th>
+                <th>C</th>
+                <th>D</th>
+            </tr>
+            <tr>
+                <th>a</th>
+                <td>1-1</td>
+                <td>2-2</td>
+                <td>3-3</td>
+                <td>4-4</td>
+            </tr>
+            <tr>
+                <th>b</th>
+                <td>1-1</td>
+                <td>2-2</td>
+                <td>3-3</td>
+                <td>4-4</td>
+            </tr>
+            <tr>
+                <th>c</th>
+                <td>1-1</td>
+                <td>2-2</td>
+                <td>3-3</td>
+                <td>4-4</td>
+            </tr>
+            <tr>
+                <th>d</th>
+                <td>1-1</td>
+                <td>2-2</td>
+                <td>3-3</td>
+                <td>4-4</td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <p>Aplicada la propiedad border-spacing: 5px 2px;</p>
+        <table>
+            <tr>
+                <th>TABLA</th>
+                <th>A</th>
+                <th>B</th>
+                <th>C</th>
+                <th>D</th>
+            </tr>
+            <tr>
+                <th>a</th>
+                <td>1-1</td>
+                <td>2-2</td>
+                <td>3-3</td>
+                <td>4-4</td>
+            </tr>
+            <tr>
+                <th>b</th>
+                <td>1-1</td>
+                <td>2-2</td>
+                <td>3-3</td>
+                <td>4-4</td>
+            </tr>
+            <tr>
+                <th>c</th>
+                <td>1-1</td>
+                <td>2-2</td>
+                <td>3-3</td>
+                <td>4-4</td>
+            </tr>
+            <tr>
+                <th>d</th>
+                <td>1-1</td>
+                <td>2-2</td>
+                <td>3-3</td>
+                <td>4-4</td>
+            </tr>
+        </table>
+    </div>
+
 
 </html>

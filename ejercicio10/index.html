@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/stylesheet.css">
+</head>
+
+<body>
+    <div>
+        <ul>
+            <a href="">
+                <li><span>A</span>rchivo</li>
+            </a>
+            <a href="">
+                <li><span>E</span>dición</li>
+            </a>
+            <a href="">
+                <li><span>V</span>er</li>
+            </a>
+            <a href="">
+                <li><span>M</span>arcadores</li>
+            </a>
+            <a href="">
+                <li>Wid<span>g</span>ets</li>
+            </a>
+            <a href="">
+                <li>Titulare<span>s</span></li>
+            </a>
+            <a href="">
+                <li><span>H</span>erramientas</li>
+            </a>
+            <a href="">
+                <li>A<span>y</span>uda</li>
+            </a>
+        </ul>
+        <h2>Formulario muy sencillo</h2>
+        <form action="">
+            <fieldset>
+                <label for="first">Escribe tu nombre</label> <input type="text" name="" id="first"><br>
+                <input type="button" value="Enviar">
+            </fieldset>
+        </form>
+    </div>
+
+    <form action="">
+        <fieldset>
+            <legend></legend>
+            <h3>Rellena tu formulario</h3>
+            <label for="nombre">Nombre</label><br>
+            <input type="text" id="nombre" size="20"><br>
+            <label for="apellidos">Apellidos</label><br>
+            <input type="text" id="apellidos" size="40"><br>
+            <label for="contraseña">Contraseña</label><br>
+            <input type="password" id="contraseña" size="10"><br>
+            <label for="dni">DNI</label><br>
+            <input type="text" id="dni" size="9"><br>
+            <label for="sexo">Sexo</label><br>
+            <input name="sexo" type="radio" id="woman" value="mujer">
+            <label for="woman">Mujer</label><br>
+            <input name="sexo" type="radio" id="man">
+            <label for="man">Hombre</label><br>
+            <label for="foto">Incluir mi foto</label><input type="file" name="foto">
+            <div>Enviar <input type="button" value="Enviar"></div>
+            <input type="file" name="" id="">
+        </fieldset>
+    </form>
+
+    <form action="" method="post">
+
+
+        <fieldset>
+            <h2>Datos seleccionables</h2>
+            <label>Sistema Operativo<input list="os_selection" name="os" placeholder="-selecciona-"></label>
+            <datalist id="os_selection">
+                <option value="Windows">
+                <option value="Linux">
+                <option value="MacOSx">
+                <option value="Otro">
+                    <input type="submit" value="">
+
+            </datalist> <br>
+            <select name="" id="">
+                <option value="windows">Windows</option>
+                <option value="linux">Linux</option>
+                <option value="macOsx">MacOsx</option>
+                <option value="otro">Otro</option>
+            </select>
+
+            <input type="number" min="1" max="5">
+        </fieldset>
+    </form>
+
+
+    <ol type="A">
+        <li>df</li>
+        <li>lolo</li>
+        <li>lolo</li>
+        <li>lolo</li>
+        <li>lolo</li>
+        <li>lolo</li>
+    </ol>
+
+</body>
+
+</html>

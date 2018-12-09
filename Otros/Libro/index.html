@@ -1,0 +1,89 @@
+<!DOCTYPE html >
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Blackstone Bistro: Pizza-on-Demand</title>
+    <style type="text/css">
+        ol,
+        ul {
+            list-style-type: none;
+        }
+
+        input[type="checkbox"],
+        input[type="radio"] {
+            position: relative;
+            top: 2px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Blackstone Bistro | Pizza-on-Demand</h1>
+
+    <p>Our 12" wood-fired pizzas are available for delivery. Build your custom pizza and we'll deliver it within an
+        hour.</p>
+
+
+    <form action="">
+        <fieldset>
+            <legend>
+                Your Information
+            </legend>
+            <ul>
+                <li><label for="name">Name: <input type="text"></label> </li>
+                <li><label for="address">Address: <input type="text"></label> </li>
+                <li><label for="telephone_number">Telephone Number: <input type="text"></label> </li>
+                <li> <label for="email">Email: <input type="text"></label> </li>
+                <li><label for="instructions">Delivery instructions: <br>
+                        <textarea rows="5" cols="50" placeholder="No more than400 characters long." name="instructions"></textarea></label>
+                </li>
+            </ul>
+        </fieldset>
+
+
+        <h2>Design Your Dream Pizza:</h2>
+
+        <fieldset>
+            <legend>
+                Pizza specs
+            </legend>
+            <fieldset>
+                <legend>Crust <em>(Choose one)</em>:</legend>
+
+
+
+                <ul>
+                    <li><label for="classic"><input type="radio" name="crust" id="classic">Classic white</label></li>
+                    <li><label for="multigrain"><input type="radio" name="crust" id="multigrain">Multigrain</label></li>
+                    <li><label for="cheese_stuffed"><input type="radio" name="crust" id="cheese_stuffed">Cheese-stuffed
+                            crust</label></li>
+                    <li><label for="gluten_free"><input type="radio" name="crust" id="gluten_free">Gluten-free</label></li>
+                </ul>
+
+            </fieldset>
+            <fieldset>
+                <legend>
+                    Toppings <em>(Choose as many as you want)</em>:
+                </legend>
+                <ul>
+                    <li><label for="red_sauce"><input type="checkbox" name="toppings" id="red_sauce">Red sauce</label></li>
+                    <li><label for="white_sauce"><input type="checkbox" name="toppings" id="white_sauce">White sauce</label></li>
+                    <li><label for="mozarella_cheese"><input type="checkbox" name="toppings" id="mozarella_cheese">Mozzarella
+                            Cheese</label></li>
+                    <li><label for="pepperoni"><input type="checkbox" name="toppings" id="pepperoni">Pepperoni</label></li>
+                    <li><label for="mushrooms"><input type="checkbox" name="toppings" id="mushrooms">Mushrooms</label></li>
+                    <li><label for="peppers"><input type="checkbox" name="toppings" id="peppers">Peppers</label></li>
+                    <li><label for="anchovies"><input type="checkbox" name="toppings" id="anchovies">Anchovies</label></li>
+                </ul>
+
+                <p>Number</p>
+                <p>How many pizzas:<p>
+            </fieldset>
+        </fieldset>
+    </form>
+
+</body>
+
+</html>
